@@ -307,20 +307,24 @@
         display: none;
       }      
 
-      .phone
+      .phone{
+        display: block;
+      }
+
+      .phone img
       {
         margin-top: 100px;
         position: relative;
         display: block;
-        margin-left: 0;
-        width: 100px;
-        height: 100px;
+        margin-left: 30px;
+        width: 320px;
+        height: 300px;
       }
 
 
       .interactive-text
       {
-        margin-top: 400px;
+        margin-top: 250px;
         margin-left:40px;
         text-align: left;
         width: 300px;
@@ -338,7 +342,7 @@
         display: block;
         position: relative;
         text-align: center;
-        margin-left:10;
+        margin-left:50;
         margin-top: 50px;
         padding: 18px 80px 18px 80px;
       }
@@ -358,7 +362,7 @@
       .creations
       {
         position: relative;
-        margin-top: 680px;
+        margin-top: 580px;
         width: 100%;
         text-align: center;
         margin-left: 10px;
