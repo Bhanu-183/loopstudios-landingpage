@@ -1,0 +1,170 @@
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family:'Alata';
+}
+
+.header
+{
+    height: 650px;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(8, 8, 8, 0.7), rgba(87, 6, 76, 0.5)),url(./images/desktop/image-hero.jpg);
+}
+
+.title
+{
+    font-family:'Alata';
+    font-size:50px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 170px;
+    color: white;
+}
+
+.opt-mob
+{
+    color: white;
+    display: none;
+}
+.navbar
+{
+    color: white;
+    display: inline;
+    float: right;
+    margin-right: 120px;
+    margin-top: 100px;
+}
+
+.navbar a
+{
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+   
+}
+
+.navbar a:active
+{
+    text-decoration: underline;
+}
+
+.text
+{
+    padding: 30px;
+    position: absolute;
+    font-family:'Josefin Sans';
+    width: 550px;
+    color: white;
+    font-size: 60px;
+    border: solid white;
+    margin-left: 170px;
+    margin-top: 300px;
+}
+
+@media only screen and (max-width:600px)
+{
+    .header
+    {
+        height: 1000px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.7), rgba(87, 6, 76, 0.5)),url(./images/mobile/image-hero.jpg);
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    .title
+    {
+        font-size:40px;
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+
+    .text
+    {
+        margin-left: 50px;
+        width: 470px;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+
+    .opt-mob
+    {
+        display: block;
+        float: right;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
+    .modal
+    {
+        display: none; 
+        position: fixed;
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,1); 
+      }
+      
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        margin-top: 100px;
+        text-align: center;
+      }
+      
+      .modal-content{  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      .modal-content a
+      {
+        text-decoration: none;
+        display: block;
+        color: white;
+        padding: 15px;
+      }
+      
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+      
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight:lighter;
+        transition: 0.3s;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+}
